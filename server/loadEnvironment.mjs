@@ -1,3 +1,3 @@
 import dotenv from "dotenv";
 
-dotenv.config({path: '/etc/secrets/.env'});
+dotenv.config({path: '/etc/secrets/env'});
