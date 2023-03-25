@@ -9,9 +9,10 @@ router.get("/", async (req, res) => {
     await collection.deleteMany();
     let entries =
         [
+            { name: "Squat to Pushup", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "chest", repetitionPerSet: "1", durationPerRep: "20", setsPerExercise: "2" },
             { name: "Pushup", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "chest", repetitionPerSet: "8", durationPerRep: "3", setsPerExercise: "3" },
             { name: "Pushup",weight:"paralletes" , exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "chest", repetitionPerSet: "8", durationPerRep: "3", setsPerExercise: "3" },
-            { name: "Incline Pushup", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "chest", repetitionPerSet: "6", durationPerRep: "3", setsPerExercise: "3" },
+            { name: "Decline Pushup", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "chest", repetitionPerSet: "6", durationPerRep: "3", setsPerExercise: "3" },
             { name: "Pushup", exerciseType: "strength", difficulty: "medium", mainMuscleGroup: "chest", repetitionPerSet: "8", durationPerRep: "3", setsPerExercise: "4" },
             { name: "Pushup", exerciseType: "strength", difficulty: "medium", mainMuscleGroup: "chest", repetitionPerSet: "8", durationPerRep: "3", setsPerExercise: "4" },
             { name: "Pushup",weight:"paralletes", exerciseType: "strength", difficulty: "hard", mainMuscleGroup: "chest", repetitionPerSet: "8", durationPerRep: "3", setsPerExercise: "5" },
@@ -36,6 +37,9 @@ router.get("/", async (req, res) => {
             { name: "Biceps Curls", weight: "12,5kg Dumbbell", exerciseType: "strength", difficulty: "medium", mainMuscleGroup: "arms", repetitionPerSet: "10", durationPerRep: "3", setsPerExercise: "3" },
             { name: "Shrugs", weight: "12,5kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "arms", repetitionPerSet: "10", durationPerRep: "3", setsPerExercise: "3" },
             { name: "Deadlifts", weight: "12,5kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "back", repetitionPerSet: "10", durationPerRep: "3", setsPerExercise: "3" },
+            { name: "Lie Down Chest Press", weight: "20kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "chest", repetitionPerSet: "1", durationPerRep: "30", setsPerExercise: "3" },
+            { name: "Standing Horizontal Press", weight: "12,5kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "arms", repetitionPerSet: "1", durationPerRep: "30", setsPerExercise: "3" },
+            { name: "Cross Body Fly's", weight: "10,0kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "arms", repetitionPerSet: "1", durationPerRep: "20", setsPerExercise: "3" },
             { name: "Lateral Raises", weight: "10kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "shoulders", repetitionPerSet: "5", durationPerRep: "3", setsPerExercise: "3" },
             { name: "Triceps Extensions", weight: "10kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "arms", repetitionPerSet: "10", durationPerRep: "3", setsPerExercise: "3", doubleSided: true },
             { name: "Upright Rows", weight: "10kg Dumbbell", exerciseType: "strength", difficulty: "easy", mainMuscleGroup: "shoulders", repetitionPerSet: "6", durationPerRep: "3", setsPerExercise: "3" },
